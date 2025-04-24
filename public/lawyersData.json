@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "name": "Mohammed Forrukh Rahman",
+    "speciality": "Criminal Law",
+    "experience": "15+",
+    "license": "BDCTG2025-54",
+    "image": "https://i.postimg.cc/wTYhSWrm/Mohammed-Forrukh-Rahman-Head-of-Chambers.jpg",
+    "availability": ["Monday", "Tuesday", "Wednesday", "Sunday"],
+    "fee": 15000,
+    "available": true
+  },
+  {
+    "id": 2,
+    "name": "Ms. Tanzina Sharmee",
+    "speciality": "Family Law",
+    "experience": "8+",
+    "license": "BDCTG2025-55",
+    "image": "https://i.postimg.cc/W4CHhgf1/Ms-Tanzina-Sharmee.jpg",
+    "availability": ["Tuesday", "Thursday", "Saturday", "Sunday"],
+    "fee": 8000,
+    "available": true
+  },
+  {
+    "id": 3,
+    "name": "Moniruzzaman Saddam",
+    "speciality": "Corporate Law",
+    "experience": "7+",
+    "license": "BDCTG2025-56",
+    "image": "https://i.postimg.cc/KzL1fbxs/Saddam-scaled-1.jpg",
+    "availability": ["Monday", "Thursday", "Saturday", "Sunday"],
+    "fee": 9000,
+    "available": true
+  },
+  {
+    "id": 4,
+    "name": "Syeda Anika Tabassum",
+    "speciality": "Immigration Law",
+    "experience": "6+",
+    "license": "BDCTG2025-57",
+    "image": "https://i.postimg.cc/FFyfJhPY/Ms-Syeda-Anika-Tabassumr.jpg",
+    "availability": ["Tuesday", "Wednesday", "Thursday", "Saturday"],
+    "fee": 11500,
+    "available": false
+  },
+  {
+    "id": 5,
+    "name": "Shahinoor Alam",
+    "speciality": "Estate Planning",
+    "experience": "10+",
+    "license": "BDCTG2025-65",
+    "image": "https://i.postimg.cc/xd5xdwWh/Mrs-Shahinoor-Alam.jpg",
+    "availability": ["Tuesday", "Wednesday", "Thursday", "Saturday"],
+    "fee": 9500,
+    "available": false
+  },
+  {
+    "id": 6,
+    "name": "Tamanna Afroz",
+    "speciality": "Labor Law",
+    "experience": "7+",
+    "license": "BDCTG2025-59",
+    "image": "https://i.postimg.cc/zv2YRL4m/Tamanna-1.jpg",
+    "availability": ["Wednesday", "Thursday", "Saturday", "Sunday"],
+    "fee": 13500,
+    "available": true
+  },
+  {
+    "id": 7,
+    "name": "Habibul Bashar Sifat",
+    "speciality": "Environmental Law",
+    "experience": "9+",
+    "license": "BDCTG2025-60",
+    "image": "https://i.postimg.cc/qv3HzvLY/Mr-Habibul-Bashar-Sifat.jpg",
+    "availability": ["Monday", "Tuesday", "Wednesday", "Saturday"],
+    "fee": 9500,
+    "available": true
+  },
+  {
+    "id": 8,
+    "name": "Rubaiyat Hussain",
+    "speciality": "Intellectual Property",
+    "experience": "11+",
+    "license": "BDCTG2025-61",
+    "image": "https://i.postimg.cc/xdGr3pB3/Mr-Rubaiyat-Hussain.jpg",
+    "availability": ["Monday", "Wednesday", "Thursday", "Sunday"],
+    "fee": 5500,
+    "available": false
+  },
+  {
+    "id": 9,
+    "name": "Md. Ashari Islam",
+    "speciality": "Real Estate Law",
+    "experience": "13+",
+    "license": "BDCTG2025-62",
+    "image": "https://i.postimg.cc/tCsLM4LT/Mr-Md-Ashari-Islam.jpg",
+    "availability": ["Tuesday", "Wednesday", "Saturday", "Sunday"],
+    "fee": 11500,
+    "available": true
+  },
+  {
+    "id": 10,
+    "name": "Khandaker Mashfique Ahmed",
+    "speciality": "Bankruptcy Law",
+    "experience": "5+",
+    "license": "BDCTG2025-63",
+    "image": "https://i.postimg.cc/HLgRn4jc/Mr-Khandaker-Mashfique-Ahmed.jpg",
+    "availability": ["Monday", "Thursday", "Saturday", "Sunday"],
+    "fee": 13000,
+    "available": false
+  },
+  {
+    "id": 11,
+    "name": "Kamrunnaher Shimu",
+    "speciality": "Personal Injury",
+    "experience": "14+",
+    "license": "BDCTG2025-64",
+    "image": "https://i.postimg.cc/G23fJLFb/Ms-Kamrunnaher.jpg",
+    "availability": ["Monday", "Tuesday", "Wednesday", "Saturday"],
+    "fee": 8500,
+    "available": true
+  },
+
+  {
+    "id": 12,
+    "name": "Ashfaqul Kabir Marshall",
+    "speciality": "Tax Law",
+    "experience": "8+",
+    "license": "BDCTG2025-58",
+    "image": "https://i.postimg.cc/bJXJs5k0/Mr-Ashfaqul-Kabir-Marshall.jpg",
+    "availability": ["Monday", "Tuesday", "Thursday", "Sunday"],
+    "fee": 12000,
+    "available": false
+  }
+]
