@@ -2,7 +2,7 @@ import React from "react";
 import { PiTrademarkRegistered } from "react-icons/pi";
 import { Link } from "react-router";
 
-const Lawyer = ({ singleLawyer, urlFriendlyName }) => {
+const Lawyer = ({ singleLawyer, urlLawyerName }) => {
   const { image, availability, experience, name, speciality, license } =
     singleLawyer;
 
@@ -37,7 +37,7 @@ const Lawyer = ({ singleLawyer, urlFriendlyName }) => {
               </p>
             </div>
 
-            <Link to={`/lawyerProfile/${urlFriendlyName}`} className=" btn btn-primary rounded-full shadow-none border border-green-500 text-green-500 font-semibold bg-white hover:bg-green-600 hover:text-white duration-300 ease-in-out transition-colors">
+            <Link to={`/lawyerProfile/${urlLawyerName}`} className=" btn btn-primary rounded-full shadow-none border border-green-500 text-green-500 font-semibold bg-white hover:bg-green-600 hover:text-white duration-300 ease-in-out transition-colors">
             View Details
             </Link>
           </div>

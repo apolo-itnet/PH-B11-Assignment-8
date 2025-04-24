@@ -8,13 +8,8 @@ import noDataImage from "../../assets/no-data.svg";
 
 const LawyerProfile = () => {
   const { license } = useParams();
-  console.log("License from URL:", license)
   const data = useLoaderData();
   const navigate = useNavigate();
-
-  // const lawyerUrlNames = (urlName) => {
-  //   return urlName.replace(/-/g, " ");
-  // };
 
   const lawyerDetails = data.find(
     (lawyer) => lawyer.license.toUpperCase() === license.toUpperCase()

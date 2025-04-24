@@ -1,38 +1,41 @@
-import React, { useEffect } from 'react';
-import Navbar from '../../Components/Header/Navbar';
-import { Outlet, useLocation, useParams } from 'react-router';
-import Footer from '../../Components/Footer/Footer';
+import React, { useEffect, useState } from "react";
+import { Outlet, useLocation, useParams, useLoaderData } from "react-router-dom";
+import Navbar from "../../Components/Header/Navbar";
+import Footer from "../../Components/Footer/Footer";
+import LoadingSpinner from "../../Components/LoadingSpinner/LoadingSpinner";
 
 const Root = () => {
-
   const location = useLocation();
-  const {name} = useParams();
+  const { license } = useParams();
+  const data = useLoaderData();
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    const lawyerUrlNames = (urlName) => {
-      if (!urlName) return "";
-      return urlName.replace(/-/g, " ") 
-      .split(" ") 
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
-    }
-    
-    if (location.pathname === "/my-bookings") {
-      document.title = "Booking"
-    } else if (location.pathname.startsWith("/lawyerProfile")) {
-      document.title = lawyerUrlNames(name) || "Lawyer Profile";
-    } else if (location.pathname === "/blogs"){
-      document.title = "Blogs";
-    }
-    else {
-      document.title = "Law.BD";
-    }
-    
-  }, [location, name] );
+    setIsLoading(true);
+    const timer = setTimeout(() => setIsLoading(false), 500);
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    const lawyerDetails = data?.find(
+      (lawyer) => lawyer?.license.toLowerCase() === license?.toLowerCase()
+    );
+    const lawyerName = lawyerDetails?.name || "Lawyer Profile";
+
+    document.title = 
+        location.pathname === "/my-bookings"
+      ? "Booking"
+      : location.pathname.startsWith("/lawyer/")
+      ? lawyerName 
+      : location.pathname === "/blogs"
+      ? "Blogs"
+      : "Law.BD"; 
+  }, [location.pathname, license, data]);
 
   return (
-    <div className='md:max-w-7xl mx-auto'>
+    <div className="md:max-w-7xl mx-auto">
       <Navbar></Navbar>
-      <Outlet></Outlet>
+      {isLoading ? <LoadingSpinner></LoadingSpinner> : <Outlet></Outlet>}
       <Footer></Footer>
     </div>
   );

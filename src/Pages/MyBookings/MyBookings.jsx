@@ -23,7 +23,6 @@ const MyBookings = () => {
   useEffect(() => {
     try {
       const storedBookings = localStorage.getItem("bookings");
-      // console.log(localStorage.getItem("bookings"));
       if (storedBookings) {
         const parsedBookings = JSON.parse(storedBookings);
         if (Array.isArray(parsedBookings)) {
@@ -41,7 +40,6 @@ const MyBookings = () => {
 
   useEffect( () => {
     const bookedLawyer = location.state?.bookedLawyer;
-    console.log("Booked lawyer:", location.state?.bookedLawyer)
     if(bookedLawyer){
       toast.success(`Booking Success for ${bookedLawyer}!`, {
         position: 'top-right',

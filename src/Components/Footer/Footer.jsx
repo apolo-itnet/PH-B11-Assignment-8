@@ -44,14 +44,7 @@ const Footer = () => {
         </div>
         <div className="pb-4 border-b border-dashed border-gray-50/30 w-full">
         <nav >
-          {/* <div className="flex gap-8 text-md font-semibold ">
-          <a href="/" className="text-white hover:text-green-500 transition-colors">Home</a>
-            <a href="/my-bookings" className="text-white hover:text-green-500 transition-colors">MyBookings</a>
-            <a href="/blogs" className="text-white hover:text-green-500 transition-colors">Blogs</a>
-            <a href="/contact" className="text-white hover:text-green-500 transition-colors">Contact Us</a>
-          </div> */}
           {links}
-
         </nav>
         </div>
 

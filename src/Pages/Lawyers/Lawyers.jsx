@@ -9,7 +9,7 @@ const Lawyers = ({ lawyersData }) => {
     setShowAll(!showAll);
   };
 
-  const getUrlFriendlyName = (license) => {
+  const getUrlLawyerName = (license) => {
     return license.toUpperCase().replace(/\s+/g, "-");
   };
 
@@ -37,7 +37,7 @@ const Lawyers = ({ lawyersData }) => {
             <Lawyer 
             key={sLawyer.id} 
             singleLawyer={sLawyer}
-            urlFriendlyName={getUrlFriendlyName(sLawyer.license)}
+            urlLawyerName={getUrlLawyerName(sLawyer.license)}
             ></Lawyer>
           ))}
         </div>
